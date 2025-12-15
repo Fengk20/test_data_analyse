@@ -1,0 +1,21 @@
+# === 核心深度学习框架 ===
+torch>=2.0.0
+# 注意：如果你需要 GPU 版本，通常建议去 pytorch.org 复制专门的安装命令，
+# 但直接 pip install torch 在大多数云环境（如 Kaggle/Colab）也能自动识别 CUDA。
+
+# === Hugging Face 生态 (模型与数据) ===
+transformers>=4.42.0
+datasets
+# 必装：DeBERTa-v3 的 Tokenizer 依赖这个库，否则会报错
+sentencepiece
+# 必装：Trainer API 依赖这个库进行显存优化和硬件调度
+accelerate>=0.21.0
+
+# === 数据处理与科学计算 ===
+pandas
+numpy
+# 对应代码中的 sklearn.metrics
+scikit-learn
+
+# === 实验追踪 ===
+wandb
