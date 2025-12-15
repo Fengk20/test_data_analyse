@@ -1,4 +1,4 @@
-*.csv
+dataset_train.csv
 wandb/
 model/
 __pycache__/
